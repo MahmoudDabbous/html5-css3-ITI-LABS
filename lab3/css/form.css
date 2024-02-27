@@ -1,0 +1,25 @@
+input[type='text'],
+input[type='email'] {
+    width: 50%;
+    margin-bottom: 15px;
+    border: 1px solid;
+}
+
+input[type='text']:valid {
+    border-color: greenyellow;
+}
+
+input[type='email']:valid {
+    border-color: rgb(37, 194, 37);
+}
+
+input[type='text']+span,
+input[type='email']+span {
+    display: none;
+}
+
+input[type='text']:invalid+span,
+input[type='email']:invalid+span {
+    display: block;
+    color: red;
+}

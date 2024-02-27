@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spade Shape</title>
+    <style>
+        body {
+            padding-top: 50px;
+            text-align: center;
+        }
+
+        .shape {
+            transform: rotate(135deg);
+        }
+
+        .heart {
+            position: relative;
+            top: 0;
+            background-color: #000;
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+        }
+
+        .heart:before,
+        .heart:after {
+            content: "";
+            position: absolute;
+            background-color: #000;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+        }
+
+        .heart:before {
+            top: -15px;
+            left: 0;
+        }
+
+        .rect {
+            width: 0;
+            height: 0;
+            background-color: #000;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 20px solid #000;
+            transform: rotate(45deg);
+            position: absolute;
+            bottom: 20px;
+            right: -3px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shape">
+        <span class="heart">
+            <span class="rect"></span>
+        </span>
+    </div>
+</body>
+
+</html>
